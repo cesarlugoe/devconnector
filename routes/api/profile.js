@@ -248,11 +248,15 @@ router.delete(
           .map(item => item.id)
           .indexOf(req.params.exp_id);
 
-        // Splice out of array
-        profile.experience.splice(removeIndex, 1);
-
-        // Save
-        profile.save().then(profile => res.json(profile));
+        if (removeIndex == -1) {
+          errors.noedutodelete = 'There is no experience to delete';
+          res.status(404).json(errors);
+        } else {
+          // Remove the experience
+          profile.experience.splice(removeIndex, 1);
+          // Save profile
+          profile.save().then(profile => res.json(profile));
+        }
       })
       .catch(err => res.status(404).json(err));
   }
@@ -272,11 +276,15 @@ router.delete(
           .map(item => item.id)
           .indexOf(req.params.edu_id);
 
-        // Splice out of array
-        profile.education.splice(removeIndex, 1);
-
-        // Save
-        profile.save().then(profile => res.json(profile));
+        if (removeIndex == -1) {
+          errors.noedutodelete = 'There is no education to delete';
+          res.status(404).json(errors);
+        } else {
+          // Remove the experience
+          profile.experience.splice(removeIndex, 1);
+          // Save profile
+          profile.save().then(profile => res.json(profile));
+        }
       })
       .catch(err => res.status(404).json(err));
   }
