@@ -1,9 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,4 +9,143 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* --------------- Header -------------------*/
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(51, 58, 65);
+  display: flex;
+  font-weight: 400;
+  
+}
+
+#logo a {
+  color: white;
+  font-size: 20px;
+}
+
+.nav-container-left {
+  width: 50%;
+  padding-right: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container-right {
+  width: 50%;
+  padding-left: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar{
+  margin: 0;
+  display: flex;
+}
+
+.nav-bar li {
+  margin: 20px 15px 0 0;
+  list-style: none;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: rgb(153, 157, 160);
+  font-size: 1.25rem;
+}
+
+/* --------------- Footer -------------------*/
+
+.footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  padding-top: 20px;
+  font-size: 20px;
+  background-color: rgb(51, 58, 65);
+}
+
+/* --------------- Landing -------------------*/
+
+.landing {
+  position: relative;
+  background-image: url('./assets/img/dev-theme/showcase.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.landing-inner {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.landing-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.landing-title h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.landing-title p {
+  font-size: 20px;
+}
+
+.landing-button-container {
+  padding-top: 20px;
+}
+
+/* --------------- Forms custom-form, Add-Experience, Create-Profile, Edit-Profile -------------------*/
+/* Eduction fields also are affecting Experience fields, same form */
+
+.custom-form {
+  width: 100%;
+  padding: 30px 0 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-form-inner {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.custom-form-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-form-title h1 {
+  font-size: 60px;
+}
+
+.custom-form-title p {
+  font-size: 20px;
+}
+
+.custom-form form {
+  width: 100%;
+}
+
+.custom-form input {
+  margin-top: 10px !important;
 }
