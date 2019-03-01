@@ -149,3 +149,62 @@ code {
 .custom-form input {
   margin-top: 10px !important;
 }
+
+
+/* ----------------------------- Dashboard -----------------------------*/
+
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 30px 0 30px 0;
+}
+
+.dashboard {
+  width: 80%;
+}
+
+.dashboard h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.dashboard p {
+  font-size: 20px;
+}
+
+.dashboard-nav-container {
+  padding-top: 20px;
+}
+
+.dashboard-nav-container span {
+  margin-left: 5px;
+}
+
+/* --------------- Credential Card -------------------*/
+
+.credentialCard-container {
+  padding-top: 30px;
+}
+
+.credentialCard-container h1 {
+  font-size: 30px;
+}
+
+.credentialCard-Post {
+  display: flex;
+  padding-left: 45px;
+}
+
+.credentialCard-field {
+  width: 33%;
+}
+
+.credentialCard-field.right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.credentialCard-field span {
+  margin-right: 60px;
+}

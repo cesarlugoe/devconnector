@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Checkbox, TextArea, Button, Select } from 'semantic-ui-react';
+import { Form, TextArea, Button, Select, Input } from 'semantic-ui-react';
 
 const selectOptions = [
    {key:"d", text:"Developer", value:"Developer"}, 
@@ -48,6 +48,30 @@ export default class ProfileForm extends Component {
             <input placeholder={fields.github} />
             <label>If you want your latest repos and a Github link, include your username</label>
          </Form.Field>
+         <Form.Field>
+            <TextArea placeholder={fields.bio}></TextArea>
+            <label>Tell us a little about yourself</label>
+         </Form.Field>
+         <div>
+            <Button type="button">Add Social Network Links</Button>
+            <span>Optional</span>
+         </div>
+         <Form.Field>
+            <Input icon="twitter" iconPosition='left' placeholder="Twitter Profile Url"/>
+         </Form.Field>
+         <Form.Field>
+            <Input icon="facebook" iconPosition='left' placeholder="Facebook Page Url"/>   
+         </Form.Field>
+         <Form.Field>
+             <Input icon="linkedin" iconPosition='left' placeholder="Linkedin Profile Url"/>   
+         </Form.Field>
+         <Form.Field>
+             <Input icon="youtube" iconPosition='left' placeholder="Youtube Channel Url"/> 
+         </Form.Field>
+         <Form.Field>
+             <Input icon="instagram" iconPosition='left' placeholder="Instagram Page Url"/>
+         </Form.Field>
+         <Button fluid className="primary" type='submit'>Submit</Button>
      </Form>
     )
   }
