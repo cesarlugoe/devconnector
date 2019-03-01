@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 class Header extends Component {
   render() {
     return (
-        <header className="header-transparent header" id="header-main">
+        <header className="header-transparent app-header" id="header-main">
             <div className="nav-container-left">
               <ul className="nav-bar">
                 <li id="logo"><Link to='/'>DevConnector</Link></li>
