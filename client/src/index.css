@@ -341,3 +341,108 @@ code {
   display: flex;
   width: 100%;
 }
+
+
+/*---------------------------- Explore Profiles ----------------------------*/
+
+.explore-profiles-container {
+  width: 100%;
+  height: 100%;
+  padding: 40px 0 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.explore-profiles {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explore-profiles h2 {
+  font-size: 60px;
+}
+
+.profile-card-segment{
+  width: 100%;
+}
+
+.explore-profiles p {
+  font-size: 20px;
+}
+.explore-profile-card{
+  display: flex;
+  width: 100%;
+  height: 330px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: rgb(248, 249, 250);
+  margin-bottom: 20px;
+}
+
+.explore-profile-card-left-section{
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px 0 0 15px;
+  width: 50%;
+}
+
+.explore-profile-card-left-section h2 {
+  font-size: 30px;
+}
+
+.explore-profile-card-left-section img{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.explore-profile-card-left-section div {
+  padding-left: 15px;
+}
+
+.explore-profile-card-right-section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  padding: 10px 20px 0 70px;
+}
+
+.explore-profile-card-right-section div{
+  width: 100%;
+}
+
+.explore-profile-card-right-section h3 {
+  font-size: 25px;
+}
+
+
+
+/*---------------------------- Register ----------------------------*/
+
+.register-container{
+  padding: 30px 0 30px 0;
+  display: flex;
+  justify-content: center;
+}
+.register {
+  width: 50%;
+}
+
+.register h1 {
+  font-size: 60px;
+}
+
+.register p {
+  font-size: 20px;
+}
+
+.register-title-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
